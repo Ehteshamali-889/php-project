@@ -21,11 +21,11 @@ include("db_connection.php");
 
 <div class="container-fluide text-black  bg-info" >
     <a href="index.php" class="text-decoration-none ">
-      <h3 class="font-italic text-left text-white "> Online-Yelp </h3> 
+      <h3 class="font-italic text-left text-white "> Homey lavoro </h3> 
     </a>
     <h6 class="mr-5 font-italic text-right font-weight-bold mb-5" style="color:white;"> User Dashboared</h6>
 
-  <a class="btn btn-info text-white font-italic font-weight-bold mt-n4 float-right mt-3" 
+    <a class="btn btn-info text-white font-italic font-weight-bold mt-n4 float-right mt-3" 
        href="logout.php" >Log-out </a>
    
       </div> 
@@ -171,8 +171,8 @@ include("db_connection.php");
               </div>
 
         <div class="col-lg-4">
-        <div style="width:400px; height:200px">
-           <img style="width:400px; height:200px "src="img/logo.jpg" alt="logo"> </div>
+        <div style="width:400px; height:400px">
+          <img style="width:400px; height:400px "src="img/ff.jpeg" alt="logo"> </div>
         </div> 
         <div class="col-lg-4">  
   

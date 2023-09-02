@@ -120,9 +120,9 @@ include("db_connection.php");
               </div>
 
         <div class="col-lg-4">
-        <div style="width:400px; height:200px">
-           <img style="width:400px; height:200px "src="img/logo.jpg" alt="logo"> </div>
-        </div>
+        <div style="width:400px; height:400px">
+          <img style="width:400px; height:400px "src="img/ff.jpeg" alt="logo"> </div>
+        </div> 
         </div> 
         <div class="col-lg-4">  
   

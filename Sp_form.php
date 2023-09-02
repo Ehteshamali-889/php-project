@@ -11,6 +11,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+  <style>
+    .videosection{
+      margin: 0 auto;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
   
 </head>
 
@@ -127,7 +137,18 @@
           </div>
           </div>   
           </div>
-         
+          <div class="videosection">
+
+            <video id="video" autoplay></video>
+            <button id="capture">Capture</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <img id="capturedImage" src="" alt="Captured Image">
+            <!-- Add a hidden input field to store the captured image data -->
+            <input type="hidden" name="captured_image" id="captured_image_input">
+
+          </div>
+    
+    
           <div class="row mt-5">  
 
 
@@ -272,7 +293,47 @@ $('#check_password').keyup(function () {
 
   </script>
 
-    
+
+<script>
+    // Get references to DOM elements
+    const video = document.getElementById('video');
+    const captureButton = document.getElementById('capture');
+    const canvas = document.getElementById('canvas');
+    const capturedImage = document.getElementById('capturedImage');
+    const capturedImageInput = document.getElementById('captured_image_input');
+
+    // Initialize the user's camera
+    navigator.mediaDevices
+        .getUserMedia({ video: true })
+        .then(function (stream) {
+            video.srcObject = stream;
+        })
+        .catch(function (error) {
+            console.error('Error accessing the camera:', error);
+        });
+
+    // Add a click event listener to the "Capture" button
+    captureButton.addEventListener('click', () => {
+        // Draw the current frame of the video onto the canvas
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        // Convert the canvas content to a data URL (base64 encoded image)
+        const imageDataURL = canvas.toDataURL('image/jpeg');
+
+        // Set the src attribute of the capturedImage img element
+        capturedImage.src = imageDataURL;
+
+        // Set the value of the hidden input field to the captured image data
+        capturedImageInput.value = imageDataURL;
+    });
+</script>
+
+
+
+
+
           
 
 </body>

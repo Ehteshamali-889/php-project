@@ -33,7 +33,7 @@
             $_SESSION['admin_name'] = $row['admin_name'];    
 
             // echo $_SESSION['user_name'];
-            header("Location:http://localhost/project/admin_dashboard.php" );
+            header("Location:http://localhost/Task/project/admin_dashboard.php" );
 
             
               

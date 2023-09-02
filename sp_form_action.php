@@ -60,6 +60,31 @@ include('db_connection.php');
          echo "Problem uploading file";
          
          }
+         
+         
+
+         // Handle the captured image
+         if (isset($_POST['captured_image'])) {
+            $capturedImageData = $_POST['captured_image'];
+
+            // Define the target folder for captured images
+            $targetfolder = "captured_images/";
+
+            // Generate a unique filename for the captured image
+            $filename = uniqid() . '.png';
+
+            // Define the complete path to save the captured image
+            $targetfile = $targetfolder . $filename;
+
+            // Save the captured image to the target folder
+            if (file_put_contents($targetfile, base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $capturedImageData)))) {
+               echo "The captured image is saved as $filename <br>";
+            } else {
+               echo "Problem saving the captured image";
+            }
+         }
+
+
          }
          }
 

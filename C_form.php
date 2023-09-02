@@ -21,7 +21,7 @@
       <div class="row" >          
       <div class="col"> 
       <a href="index.php" class="text-decoration-none"> 
-      <h4 class="text-left text-white  font-italic"><img src="img/logo.png" height="70px">
+      <h4 class="text-left text-white  font-italic"><img src="img/Graphic1.png" height="70px">
           Homey Lavoro   
       </h4> 
       </a>

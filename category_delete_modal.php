@@ -5,7 +5,7 @@
 
 
 <div class="modal-header">
-<center><h4 class="modal-title font-weight-bold text-center text-danger" id="myModalLabel">Delete Province</h4></center>
+<center><h4 class="modal-title font-weight-bold text-center text-danger" id="myModalLabel">Delete Category</h4></center>
 
 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 

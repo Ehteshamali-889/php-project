@@ -105,7 +105,7 @@ span :hover{
   <div class="row pt-3 pb-2 ">
     <div class="col-6 col "> 
       <a href="index.php" class="text-decoration-none">
-          <h3 class="float-left text-white font-italic "> <img src="img/logo.png" height="70px">
+          <h3 class="float-left text-white font-italic "> <img src="img/Graphic1.png" height="70px">Homey lavoro
            </h3> 
         </a>
     </div>
@@ -216,7 +216,7 @@ span :hover{
 							</div>
 							<div class="shop-body">
 								<h3>Plumber<br>Collection</h3>
-								<a href="#" class="cta-btn"> Check Now <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="display_Plumber.php?category=plumber" class="cta-btn"> Check Now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -230,7 +230,7 @@ span :hover{
 							</div>
 							<div class="shop-body">
 								<h3>Dryers<br>Collection</h3>
-								<a href="#" class="cta-btn">Check Now<i class="fa fa-arrow-circle-right"></i></a>
+								<a href="display_Dryer.php?category=dryer" class="cta-btn">Check Now<i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -244,7 +244,7 @@ span :hover{
 							</div>
 							<div class="shop-body">
 								<h3>Gyms<br>Collection</h3>
-								<a href="#" class="cta-btn">Check Now <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="display_Gym.php?category=gym" class="cta-btn">Check Now <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -291,7 +291,7 @@ span :hover{
              ?>
              
              <div class="col-md-12" style="">
-               <a class="text-decoration-none " href="search_result.php?speciality=<?php echo $key['category_name'];  ?>">
+               <a class="text-decoration-none " href="display_<?php echo ltrim($key['category_name']); ?>.php?category=<?php echo strtolower(ltrim($key['category_name'])); ?>">
 
                     <img src="<?php echo $imgURL ?>" alt="" class="img-thumbnail category-slider" style="">
                     <h4><?php echo $key['category_name'];  ?></h4> 
