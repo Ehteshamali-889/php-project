@@ -76,7 +76,7 @@ while($row=mysqli_fetch_array($result)){ ?>
 <td>
 <button type="button" class="btn btn-danger btn-sm " data-toggle="modal" data-target="#dell<?php echo $row['user_id']; ?>">
 <span class="glyphicon glyphicon-edit"></span> Delete </button>
-	<?php// include("user_delete_modal.php"); ?> 
+	<?php include("userdelete.php"); ?> 
 
 </td>
 
