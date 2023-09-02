@@ -54,11 +54,7 @@
 <div class="col-2 border border-dark mr-3 ml-5 bg-secondary" >
 
 
-<div class="border border-dark text-center mt-3 ">
-<button type="button" id="home"  class="side_btn secondary p-2 font-weight-bold " >Work Pending
-<span class="badge badge-warning"><?php// echo $sqlcount; ?></span>
-</button>
-</div>
+
 
 
 <div class=" text-center  mt-5 bg_color" >
@@ -73,19 +69,14 @@
 
 
 
-<div class=" text-center  mt-5 bg_color" >
-<button type="button" id="contact_messages"  class="btn secondary p-2 font-weight-bold " >Contact Messages
-</button>
-</div>       
+  
 
 
 <div class="text-center  mt-5 bg_color" >
 <button type="button" id="provinces"  class="btn secondary p-2 font-weight-bold " >Provinces</button>
 </div>
 
-<div class=" text-center mt-5 bg_color" >
-<button type="button" id="cities"  class="btn block secondary p-2 font-weight-bold " >Cities</button>
-</div>
+
 </div>
 
 
