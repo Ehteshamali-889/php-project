@@ -22,9 +22,9 @@ echo " qyery Failed".mysqli_error($connect);
 }
 else{
 //echo " Record delete Query is successfully executed";
-$_SESSION["add_province"]="<div class='alert alert-warning'>
+$_SESSION["add_user"]="<div class='alert alert-warning'>
   <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-  <strong>Success!</strong> Province is deleted</div>";
+  <strong>Success!</strong> User is deleted</div>";
 
 
 header('Location: admin_dashboard.php');
