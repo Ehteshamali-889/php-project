@@ -70,7 +70,7 @@ while($row=mysqli_fetch_array($result)){ ?>
 <td>
 <button type="button" class="btn btn-warning btn-sm " data-toggle="modal" data-target="#edit<?php echo $row['user_id']; ?>">
 <span class="glyphicon glyphicon-edit"></span> Edit </button>
-<?php// include("UserEditModal.php");    ?>
+<?php include("UserEditModal.php");    ?>
 
 </td>
 <td>
