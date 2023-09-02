@@ -36,7 +36,7 @@
   <div class="form-group">
 	<input name="provinceid" type="hidden" class="form-control" id="provinceid" value="<?php echo $province_id; ?>">
 	<label for="ProvinceName">Change Province name</label>
-    <input name="provincename" id="provincename" type="text" class="form-control" id="provincename" value="attr{'dat-province'}" >
+    <input name="provincename" id="provincename" type="text" class="form-control" id="provincename" value="<?php echo $ep_name; ?>">
   </div>
   
 
