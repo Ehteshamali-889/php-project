@@ -38,6 +38,28 @@ include("db_connection.php");
   $row = mysqli_fetch_assoc($result);
  ?>
 
+<div class="container">
+  <div class="row">
+    <!-- Displaying the image -->
+    
+      <div class="col-12">
+        <?php
+        $imageFileName = $row['image'];
+        $imagePath = "captured_images/$imageFileName";
+
+        // Check if the image file exists
+        if (file_exists($imagePath)) {
+          ?>
+          <img src="<?php echo $imagePath; ?>" alt="Service Provider Image" style="max-width: 100px; max-height: 100px;">
+          <?php
+        } 
+        ?>
+      </div>
+    
+  </div>
+</div>
+
+
  <div class="container ">
    <div class="row  "><h2 class="text-centre text-white">Welcome <?php echo $_SESSION[' Spname'];?></h2></div>
     
